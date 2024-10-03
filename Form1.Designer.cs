@@ -34,6 +34,7 @@
             PipeDown = new PictureBox();
             PipeUp = new PictureBox();
             Ground = new PictureBox();
+            scoreBoard = new Label();
             ((System.ComponentModel.ISupportInitialize)Bird).BeginInit();
             ((System.ComponentModel.ISupportInitialize)PipeDown).BeginInit();
             ((System.ComponentModel.ISupportInitialize)PipeUp).BeginInit();
@@ -86,12 +87,22 @@
             Ground.TabIndex = 3;
             Ground.TabStop = false;
             // 
+            // scoreBoard
+            // 
+            scoreBoard.AutoSize = true;
+            scoreBoard.Location = new Point(12, 6);
+            scoreBoard.Name = "scoreBoard";
+            scoreBoard.Size = new Size(13, 15);
+            scoreBoard.TabIndex = 4;
+            scoreBoard.Text = "0";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Cyan;
             ClientSize = new Size(653, 621);
+            Controls.Add(scoreBoard);
             Controls.Add(Ground);
             Controls.Add(PipeUp);
             Controls.Add(PipeDown);
@@ -105,6 +116,7 @@
             ((System.ComponentModel.ISupportInitialize)PipeUp).EndInit();
             ((System.ComponentModel.ISupportInitialize)Ground).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -114,5 +126,6 @@
         private PictureBox PipeDown;
         private PictureBox PipeUp;
         private PictureBox Ground;
+        private Label scoreBoard;
     }
 }
