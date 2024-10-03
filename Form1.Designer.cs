@@ -60,7 +60,7 @@
             // PipeDown
             // 
             PipeDown.Image = Properties.Resources.pipedown;
-            PipeDown.Location = new Point(364, -70);
+            PipeDown.Location = new Point(541, -115);
             PipeDown.Name = "PipeDown";
             PipeDown.Size = new Size(100, 261);
             PipeDown.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -70,7 +70,7 @@
             // PipeUp
             // 
             PipeUp.Image = Properties.Resources.pipe;
-            PipeUp.Location = new Point(364, 327);
+            PipeUp.Location = new Point(541, 408);
             PipeUp.Name = "PipeUp";
             PipeUp.Size = new Size(100, 282);
             PipeUp.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -90,11 +90,12 @@
             // scoreBoard
             // 
             scoreBoard.AutoSize = true;
+            scoreBoard.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             scoreBoard.Location = new Point(12, 6);
             scoreBoard.Name = "scoreBoard";
-            scoreBoard.Size = new Size(13, 15);
+            scoreBoard.Size = new Size(65, 21);
             scoreBoard.TabIndex = 4;
-            scoreBoard.Text = "0";
+            scoreBoard.Text = "Score: 0";
             // 
             // Form1
             // 
